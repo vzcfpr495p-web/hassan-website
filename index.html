@@ -1,152 +1,122 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+
+  <style>
+    body {
+      background: #101827;
+      color: white;
+      font-family: Arial;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .card {
+      background: #1e293b;
+      margin: 20px;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    h1, h2 {
+      color: gold;
+    }
+
+    .profile {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid gold;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .skills, .contact {
+      background: #111;
+      color: white;
+      padding: 25px;
+      margin: 20px auto;
+      border: 2px solid gold;
+      border-radius: 15px;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .skills p {
+      background: #222;
+      padding: 10px;
+      border-radius: 8px;
+      margin: 8px 0;
+    }
+
+    button, summary, .social-links a, .contact a {
+      background: linear-gradient(135deg, #ffd700, #b8860b);
+      color: #111;
+      padding: 12px 25px;
+      border-radius: 30px;
+      border: 2px solid gold;
+      font-weight: bold;
+      text-decoration: none;
+      cursor: pointer;
+      display: inline-block;
+      margin: 8px;
+      transition: 0.3s;
+    }
+
+    button:hover, summary:hover, .social-links a:hover,
+    .contact a:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px gold;
+    }
+
+    .social-links {
+      margin-top: 10px;
+    }
   </style>
-  body {
-  background: #101827;
-  color: white;
-  font-family: Arial;
-  text-align: center;
-  padding-top: 100px;
-}
+</head>
 
-.card {
-  background: #1e293b;
-  margin: 20px;
-  padding: 30px;
-  border-radius: 20px;
-}
-
-h1 {
-  color: gold;
-}
-
-button {
-  background: gold;
-  border: none;
-  padding: 15px 35px;
-  border-radius: 12px;
-  font-size: 18px;
-}
-.profile {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid gold;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.skills {
-  background: #111;
-  color: white;
-  padding: 25px;
-  margin: 20px auto;
-  border: 2px solid gold;
-  border-radius: 15px;
-  max-width: 500px;
-  text-align: center;
-}
-
-.skills h2 {
-  color: gold;
-  margin-bottom: 15px;
-}
-
-.skills p {
-  background: #222;
-  padding: 10px;
-  border-radius: 8px;
-  margin: 8px 0;
-}
-.contact {
-  background: #111;
-  color: white;
-  padding: 25px;
-  margin: 20px auto;
-  border: 2px solid gold;
-  border-radius: 15px;
-  max-width: 500px;
-  text-align: center;
-}
-
-.contact h2 {
-  color: gold;
-  margin-bottom: 15px;
-}
-
-.contact a {
-  display: inline-block;
-  background: gold;
-  color: black;
-  padding: 12px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px;
-}
-button,
-summary,
-.social-links a {
-  background: linear-gradient(135deg, #ffd700, #b8860b);
-  color: #111;
-  padding: 12px 25px;
-  border-radius: 30px;
-  border: 2px solid gold;
-  font-weight: bold;
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  margin: 8px;
-  transition: 0.3s;
-}
-
-button:hover,
-summary:hover,
-.social-links a:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 15px gold;
-</style>
 <body>
-
   <div class="card">
     <img class="profile" src="https://i.postimg.cc/XJ0qgWXH/PHOTO-2026-09-03-13-40-46-4.jpg">
+
     <h1>Ana Hassan Elbeltagy 👋</h1>
     <p>Welcome to my website!</p>
+
     <div class="about">
-  <h2>About Me</h2>
-  <p>My name is Hassan Ahmed Mohamed.</p>
-  <p>I am a student.</p>
-  <p>I live in Egypt.</p>
-</div>
+      <h2>About Me</h2>
+      <p>My name is Hassan Ahmed Mohamed.</p>
+      <p>I am a student.</p>
+      <p>I live in Egypt.</p>
+    </div>
+
     <details>
-  <summary>Start</summary>
-
-  <div class="social-links">
-    <a href="https://www.instagram.com/7assan_elbeltagy/" target="_blank">Instagram</a>
-
-    <a href="https://www.facebook.com/share/1AGyxefMAt/?mibextid=wwXIfr" target="_blank">Facebook</a>
+      <summary>Start</summary>
+      <div class="social-links">
+        <a href="https://www.instagram.com/7assan_elbeltagy/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/share/1AGyxefMAt/?mibextid=wwXIfr" target="_blank">Facebook</a>
+      </div>
+    </details>
   </div>
-</details>
+
+  <div class="skills">
+    <h2>My Skills</h2>
+    <p>Web Design</p>
+    <p>Football</p>
+    <p>Teamwork</p>
+    <p>Creativity</p>
   </div>
-<div class="skills">
-  <h2>My Skills</h2>
-  <p>Web Design</p>
-  <p>Football</p>
-  <p>Teamwork</p>
-  <p>Creativity</p>
-</div>
+
   <div class="contact">
-  <h2>Contact Me</h2>
-  <p>Feel free to contact me!</p>
-  <a href="mailto:hassanbeltagy2010@gmail.com">Send Me an Email</a>
-</div>
+    <h2>Contact Me</h2>
+    <p>Feel free to contact me!</p>
+    <a href="mailto:hassanbeltagy2010@gmail.com">Send Me an Email</a>
+  </div>
 </body>
 </html>
